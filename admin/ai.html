@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="twitter.css" />
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- The Modal -->
+    <div class="modal fade" id="signup">
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-md modal-dialog-centered"
+      >
+        <div class="modal-content p-2">
+          <!-- Modal Header -->
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+          <div class="mx-auto">
+            <img
+              src="./images/Twitter-X-Logo-PNG.jpg"
+              alt="twitter"
+              width="32px"
+              height="32px"
+            />
+          </div>
+          <p class="sign">Join Twitter Today</p>
+
+          <!-- Modal body -->
+          <div class="padin">
+            <div class="modal-body">
+              <form action="Home.html">
+                <!-- Form content goes here -->
+              </form>
+              <p style="font-size: 0.9em">
+                By Signing Up you agree to the
+                <a class="text-decoration-none" href="##"
+                  >Terms, Privacy, policy</a
+                >
+                and
+                <a class="text-decoration-none" href="##">Cookies policy</a>
+              </p>
+              <p>
+                Have an account already?
+                <a href="twitter.html" class="text-decoration-none">Log in</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#signup").modal("show");
+
+        // Optional: Auto-hide the modal after a certain time
+        setTimeout(function () {
+          $("#signup").modal("hide");
+        }, 5000); // Adjusted the time to 5000 milliseconds (5 seconds)
+      });
+    </script>
+  </body>
+</html>

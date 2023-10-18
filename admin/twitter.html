@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign in</title>
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="twitter.css" />
+    <script src="bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <button
+      type="button"
+      class="btn btn-primary"
+      data-bs-toggle="modal"
+      data-bs-target="#myModal"
+    >
+      Singin
+    </button>
+
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+      <div
+        class="modal-dialog modal-dialog-scrollable modal-md modal-dialog-centered"
+      >
+        <div class="modal-content p-2">
+          <!-- Modal Header -->
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+          ></button>
+          <div class="mx-auto">
+            <img
+              src="./images/Twitter-X-Logo-PNG.jpg"
+              alt="titer"
+              width="42px"
+              height="32px"
+            />
+          </div>
+          <p class="sign">Sign in to Twitter</p>
+
+          <!-- Modal body -->
+          <div class="padin">
+            <div class="modal-body">
+              <form action="Home.html">
+                <div class="mb-4">
+                  <a href="mailto:nazifabdullahi003@gmail.com"
+                    ><button
+                      type="button"
+                      class="btn btn-outline-secondary rounded-pill w-100"
+                    >
+                      <img
+                        src="./images/icons8_google_48px_2.png"
+                        width="22px"
+                        height="22px"
+                      />
+                      Sing in with Google
+                    </button></a
+                  >
+                </div>
+                <div class="mb-4">
+                  <button
+                    type="button"
+                    class="btn btn-outline-secondary rounded-pill w-100"
+                  >
+                    <img
+                      src="./images/icons8_mac_client_30px.png"
+                      width="22px"
+                      height="22px"
+                    />
+                    Sing in with Apple
+                  </button>
+                </div>
+                <div style="display: flex">
+                  <div class="sraight-line mb-4"></div>
+                  <p style="margin-top: -14px">or</p>
+                  <div class="sraight-line mb-4"></div>
+                </div>
+                <div class="mb-4">
+                  <input
+                    type="email"
+                    name="email"
+                    id="mail"
+                    class="form-control pt-2 pb-2"
+                    placeholder="Phone,email or username"
+                    required
+                  />
+                </div>
+                <div class="mb-4">
+                  <button
+                    type="submit"
+                    class="btn btn-dark rounded-pill form-control"
+                  >
+                    Next
+                  </button>
+                </div>
+              </form>
+              <div class="mb-5">
+                <button
+                  type="submit"
+                  class="btn btn-outline-secondary rounded-pill form-control"
+                >
+                  forgot password?
+                </button>
+              </div>
+              <p>
+                Don't have an account?
+                <a href="signup.html" class="text-decoration-none">Sign up</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        setTimeout(function () {
+          $("#myModal").modal("show");
+
+          setTimeout(function () {
+            $("#myModal").modal("hide");
+          }, 3000);
+        }, 2000);
+      });
+    </script>
+  </body>
+</html>
